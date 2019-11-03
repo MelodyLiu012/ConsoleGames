@@ -17,6 +17,8 @@ struct sSnakeSegment
 
 int main()
 {
+	srand(static_cast<unsigned>(time(nullptr)));
+	
 	// Screen Buffer
 	wchar_t * screen = new wchar_t[nScreenWidth * nScreenHeight];
 	for (int i = 0; i < nScreenWidth * nScreenHeight; i++)
